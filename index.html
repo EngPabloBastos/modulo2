@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mês dos Namorados</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        input {
+            border-radius: 4px;
+        }
+
+        label {
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            display: block;
+            ;
+        }
+
+        #form-login {
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 4px 8px;
+            padding: 40px;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    <h1 style="color: red;">Flamengo</h1>
-    <h2 style="color: green;">Fluminense</h2>
-    <h3>Botafogo</h3>
-    <h4 style="color: gray;">Corinthians</h4>
-    <h5 style="color: green;">Palmeiras</h5>
-    <h6 style="color: brown;">Vasco</h6>
-    <p>
-        Olá, Mundo!  <a href="https://google.com">Google</a>
-    </p>
-    <table>
-        <tr>linha do cabeçalho
-            <th>Título</th>
-            <th>Vídeo</th>
-        </tr>
-        <tr>Segunda linha
-            <td>Conteúdo Título</th>
-            <td>Conteúdo Vídeo</th>
-        </tr>
-    </table>
+    <h1 style="color: black">Pablo Imports</h1>
+    <h4>Nossos Produtos:</h3>
+        <table>
+            <tr>
+                <th>iPhone</th>
+                <th>Macbook</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="assets/iphone.webp" alt="Iphone" class="product">
+                </td>
+                <td>
+                    <img src="assets/mac.webp" alt="Macbook" class="product">
+                </td>
+            </tr>
+            <td>Preço do Iphone 17</td>
+            <td>Preço do Macbook Air 5</td>
+            </tr>
+            <tr>
+                <td>R$18.999,99</td>
+                <td>R$15.8493,99</td>
+            </tr>
+        </table>
+
+        <div id="form-login">
+            <form>
+                <label>Nome completo: </label>
+                <input type="text" placeholder="Digite seu nome completo">
+                <label>Senha</label>
+                <input type="password" placeholder="Digite sua senha">
+                <label>Data de Nascimento</label>
+                <input type="date">
+                <label>Horário</label>
+                <input type="time">
+                <label>Telefone</label>
+                <input type="tel">
+                <label>Quantidade</label>
+                <input type="number">
+                <label>Site</label>
+                <input type="url">
+                <label for="Homem">
+                    <input type="radio" />Masculino
+                    <label for="Mulher">
+                        <input type="radio">Feminino
+                        <label>Checkout</label>
+                        <input type="checkbox">
+                        <label>Envie</label>
+                        <input type="submit" placeholder="Enviar">
+            </form>
+        </div>
 
 </body>
+
 </html>
